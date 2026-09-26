@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+    <img
+        src="Gisma-header-logo.png"
+        alt="GISMA Logo"
+        class="gisma-logo"
+    >
+
+    <div class="subtitle">
+    <span class="line"></span>
+    <span>GISMA CHESS CHALLENGE</span>
+    <span class="line"></span>
+</div>
+
+<div class="tagline">
+    THINK • PLAY • CONQUER
+</div>
+
+</header>
+
+
+    <main>
+
+        <section class="game">
+
+            <div class="player-bar">
+                <div>
+                    <span class="dot white-dot"></span>
+                    White
+                </div>
+                <div id="whiteTime">10:00</div>
+            </div>
+
+            <div id="board"></div>
+
+            <div class="player-bar">
+                <div>
+                    <span class="dot black-dot"></span>
+                    Black
+                </div>
+                <div id="blackTime">10:00</div>
+            </div>
+
+        </section>
+
+        <aside class="panel">
+
+            <h2>Game</h2>
+
+            <div id="status" class="status">
+                White's turn
+            </div>
+
+            <button id="newGame">🔄 New Game</button>
+
+            <h2>Move History</h2>
+
+            <div id="history" class="history">
+                No moves yet
+            </div>
+
+            <div class="info">
+                <p>♟ Click a piece to move</p>
+                <p>🟢 Green = legal move</p>
+                <p>🔴 Red = capture</p>
+            </div>
+
+        </aside>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
